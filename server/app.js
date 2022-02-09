@@ -1,6 +1,6 @@
 var session = require('express-session');
 
-const HOST = '0.0.0.0';
+const HOST = '127.0.0.1';
 const PORT = 4000
 
 var app = require('express')();
@@ -18,7 +18,7 @@ app.get('/get_count', function(req, res){
     req.session.pageCountByCurrentUserOrAnyNameYouWant = 0;
   req.session.pageCountByCurrentUserOrAnyNameYouWant++;
   console.log(req.session.pageCountByCurrentUserOrAnyNameYouWant)
-  res.json({ 
+  res.send({ 
     pageCount: req.session.pageCountByCurrentUserOrAnyNameYouWant
   });
 });
