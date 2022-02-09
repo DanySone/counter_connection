@@ -18,8 +18,7 @@ const session = require('expression-session');
     session({
       secret: 'secret string',
       resave: false,
-      saveUninitialized: false,
-      store: store, /* store session data in mongodb */ 
+      saveUninitialized: false, 
       cookie: { /k can add cookie related info here */ }
     })
    );
