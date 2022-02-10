@@ -2,7 +2,7 @@
   "name": "counter_connection",
   "version": "1.0.0",
   "description": "Counter number of user's connections",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest"
   },
