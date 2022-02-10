@@ -6,6 +6,7 @@ const PORT = 4000
 var app = require('express')();
 
 
+
 app.use(session({
   secret: 'keyboard cat',
   resave: false,
@@ -23,5 +24,5 @@ app.get('/get_count', function(req, res){
   });
 });
 
-app.listen(PORT, HOST);
+module.exports = app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}/get_count`);
